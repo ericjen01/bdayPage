@@ -307,14 +307,20 @@ body {
 }
 
 @media only screen and (max-width: 992px) {
+  .formContainer {
+    top: 5%;
+  }
   .system {
     margin-top: 20%;
   }
 }
 
 @media only screen and (max-width: 576px) {
+  .formContainer {
+    top: 5%;
+  }
   .system {
-    margin-top: 70%;
+    margin-top: 50%;
   }
   .system img {
     width: 25px;
