@@ -37,6 +37,12 @@ body {
 		text-shadow: 0px 0px 5px var(--cyprus);
 	}
 }
+
+/*----STARRY BACKGROUND--------------------------------------------*/
+canvas {
+	position: absolute;
+}
+
 /*----FORM AND ORBITS--------------------------------------------*/
 .formContainer {
 	position: absolute;
