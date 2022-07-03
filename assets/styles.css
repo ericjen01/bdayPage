@@ -1,0 +1,324 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #251c2d;
+}
+
+.container {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.block {
+  display: block;
+}
+
+.centered {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  text-align: center;
+}
+
+.hoverGlow:hover {
+  color: white;
+  text-shadow: 0px 0px 5px var(--cyprus);
+}
+
+/*----FORM AND ORBITS--------------------------------------------*/
+.formContainer {
+  position: absolute;
+  top: 10%;
+  width: 70%;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  z-index: 2;
+  background-color: rgba(94, 93, 105, 0.348);
+}
+
+.formContainer .form h1 {
+  color: #d4e9ff;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+
+.formContainer .form input {
+  background-color: rgba(195, 163, 219, 0.309);
+  height: 2.4rem;
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  color: yellow;
+  font-weight: 700;
+}
+
+.formContainer .form input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.formContainer .form input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.formContainer .form input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.formContainer .form input::placeholder {
+  color: #fff;
+}
+
+.formContainer .form input:focus {
+  color: #f7f5f5;
+}
+
+.formContainer .form input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.formContainer .form input[type="submit"] {
+  background-color: rgba(0, 0, 0, 0.071);
+  color: white;
+  border-radius: 10px;
+}
+
+.formContainer .form input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.formContainer .form .res {
+  margin-bottom: 20px;
+  color: yellow;
+}
+
+.system {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  padding-top: 100%;
+  margin-top: 30%;
+}
+
+.system img {
+  width: 35px;
+  height: 35px;
+}
+
+@media (min-width: 700px) {
+  .system {
+    padding-top: 700px;
+  }
+}
+
+.system__sun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.system__orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: spin infinite linear both;
+          animation: spin infinite linear both;
+}
+
+.system__orbit:nth-child(1) {
+  width: calc(10%);
+  height: calc(10%);
+}
+
+.system__orbit:nth-child(2) {
+  width: calc(20%);
+  height: calc(20%);
+}
+
+.system__orbit:nth-child(3) {
+  width: calc(30%);
+  height: calc(30%);
+}
+
+.system__orbit:nth-child(4) {
+  width: calc(40%);
+  height: calc(40%);
+}
+
+.system__orbit:nth-child(5) {
+  width: calc(50%);
+  height: calc(50%);
+}
+
+.system__orbit:nth-child(6) {
+  width: calc(60%);
+  height: calc(60%);
+}
+
+.system__orbit:nth-child(7) {
+  width: calc(70%);
+  height: calc(70%);
+}
+
+.system__orbit:nth-child(8) {
+  width: calc(80%);
+  height: calc(80%);
+}
+
+.system__orbit:nth-child(9) {
+  width: calc(90%);
+  height: calc(90%);
+}
+
+.system__orbit:nth-child(10) {
+  width: calc(100%);
+  height: calc(100%);
+}
+
+.system__orbit--sun {
+  border: none;
+  top: 51%;
+}
+
+.system__orbit--sun img {
+  width: 50px;
+  height: 50px;
+}
+
+.system__orbit--mercury {
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+.system__orbit--venus {
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+
+.system__orbit--earth {
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+}
+
+.system__orbit--mars {
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+
+.system__orbit--jupiter {
+  -webkit-animation-duration: 50s;
+          animation-duration: 50s;
+}
+
+.system__orbit--saturn {
+  -webkit-animation-duration: 60s;
+          animation-duration: 60s;
+}
+
+.system__orbit--uranus {
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+}
+
+.system__orbit--neptune {
+  -webkit-animation-duration: 100s;
+          animation-duration: 100s;
+}
+
+.system__orbit--pluto {
+  -webkit-animation-duration: 50s;
+          animation-duration: 50s;
+}
+
+.system__planet {
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.system__icon {
+  width: 100%;
+  height: 100%;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+            transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+            transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+/* FOOTER STYLE------------------------------------------------------------*/
+footer {
+  margin-top: 40px;
+}
+
+footer .credit {
+  line-height: 1;
+  background: -webkit-gradient(linear, left top, right top, from(var(--blizzard)), color-stop(var(--stratosphere)), color-stop(var(--gainsboro)), color-stop(var(--stratosphere)), to(var(--blizzard)));
+  background: linear-gradient(90deg, var(--blizzard), var(--stratosphere), var(--gainsboro), var(--stratosphere), var(--blizzard));
+  border-top: 2px solid white;
+  padding-top: 5px;
+}
+
+footer .credit i {
+  font-size: 20px;
+  color: #d0f5c8;
+}
+
+footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* footer-----*/
+/*# sourceMappingURL=styles.css.map */
