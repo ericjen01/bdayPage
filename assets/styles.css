@@ -331,21 +331,21 @@ canvas {
 
 @media only screen and (max-width: 992px) {
   .formContainer {
-    top: 5%;
+    top: 2%;
   }
   .system {
-    margin-top: 20%;
+    margin-top: 10%;
   }
   .credit {
     width: 100%;
-    height: 3%;
+    height: 7%;
   }
 }
 
 @media only screen and (max-width: 576px) {
   .formContainer {
     width: 90%;
-    top: 3%;
+    top: 2%;
   }
   .system {
     margin-top: 40%;
