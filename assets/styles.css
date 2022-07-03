@@ -296,29 +296,36 @@ body {
   }
 }
 
-/* FOOTER STYLE------------------------------------------------------------*/
-footer {
-  margin-top: 40px;
+@media only screen and (min-width: 992px) {
+  .formContainer {
+    width: 40%;
+  }
+  .system {
+    margin-top: 10%;
+  }
 }
 
-footer .credit {
-  line-height: 1;
-  background: -webkit-gradient(linear, left top, right top, from(var(--blizzard)), color-stop(var(--stratosphere)), color-stop(var(--gainsboro)), color-stop(var(--stratosphere)), to(var(--blizzard)));
-  background: linear-gradient(90deg, var(--blizzard), var(--stratosphere), var(--gainsboro), var(--stratosphere), var(--blizzard));
-  border-top: 2px solid white;
-  padding-top: 5px;
+@media only screen and (max-width: 992px) {
+  .system {
+    margin-top: 20%;
+  }
 }
 
-footer .credit i {
-  font-size: 20px;
-  color: #d0f5c8;
+@media only screen and (max-width: 576px) {
+  .system {
+    margin-top: 70%;
+  }
+  .system img {
+    width: 25px;
+    height: 25px;
+  }
+  .system__orbit--sun {
+    border: none;
+    top: 51%;
+  }
+  .system__orbit--sun img {
+    width: 40px;
+    height: 40px;
+  }
 }
-
-footer p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  color: #fff;
-}
-
-/* footer-----*/
 /*# sourceMappingURL=styles.css.map */

@@ -198,22 +198,35 @@ body {
 		transform: translate(-50%, -50%) rotate(-360deg);
 	}
 }
-/* FOOTER STYLE------------------------------------------------------------*/
-footer {
-	margin-top: 40px;
-	.credit {
-		line-height: 1;
-		background: linear-gradient(90deg, var(--blizzard), var(--stratosphere), var(--gainsboro), var(--stratosphere), var(--blizzard));
-		border-top: 2px solid white;
-		padding-top: 5px;
-		i {
-			font-size: 20px;
-			color: rgb(208, 245, 200);
+@media only screen and (min-width: 992px) {
+	.formContainer {
+		width: 40%;
+	}
+	.system {
+		margin-top: 10%;
+	}
+}
+@media only screen and (max-width: 992px) {
+	.system {
+		margin-top: 20%;
+	}
+}
+@media only screen and (max-width: 576px) {
+	.system {
+		margin-top: 70%;
+		img {
+			width: 25px;
+			height: 25px;
+		}
+		&__orbit {
+			&--sun {
+				border: none;
+				top: 51%;
+				img {
+					width: 40px;
+					height: 40px;
+				}
+			}
 		}
 	}
-	p {
-		font-family: Arial, Helvetica, sans-serif;
-		font-weight: 700;
-		color: #fff;
-	}
-} /* footer-----*/
+}
