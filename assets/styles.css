@@ -317,10 +317,11 @@ body {
 
 @media only screen and (max-width: 576px) {
   .formContainer {
-    top: 5%;
+    width: 90%;
+    top: 3%;
   }
   .system {
-    margin-top: 50%;
+    margin-top: 40%;
   }
   .system img {
     width: 25px;
